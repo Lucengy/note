@@ -6,6 +6,8 @@
 * ctrl+e 光标到行尾
 * ctrl+箭头 光标跨单词
 * ctrl+w 删除光标所在单词
+* ctrl+r 历史搜索
+* ctrl+L 清屏
 
 ## 正则表达式
 
@@ -24,6 +26,7 @@
 * awk 'NR=10000' file 显示文件的第10000行
 * awk -F'split' file '{print $1}' 按split分割文件file，输出第1列
 * cat file | awk '$1=="abc"' '{print $0}' 当文件file中的第1行值为abc时，输出整行
+* awk '{printf("%s\t%s\t%s\t%s\n", $10, $11, $12, $13)}' /tmp/1.txt  按要求输出10-13列，分隔符为\t，末尾加换行符
 
 ## cat
 
