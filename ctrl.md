@@ -8,6 +8,8 @@
 * ctrl+w 删除光标所在单词
 * ctrl+r 历史搜索
 * ctrl+L 清屏
+* ctrl+u 删除光标前所有内容
+* ctrl+k 删除光标后所有内容
 
 ## 正则表达式
 
@@ -31,9 +33,21 @@
 ## cat
 
 * cat -n file 显示行号
+* cat -A file 可以显示所有内容，包括换行符，主要用来查找文件中莫名其妙的空格和指标符
 
 ## tar
 
 * tar czvf abc.tgz abc     将文件abc打包压缩为abc.tgz
 * tar xzvf abc.tgz            解压缩abc.tgz
 * xzvf针对的文件后缀为.tgz或者.tar.gz，针对.tar文件，使用tar xvf进行解压
+
+## tr
+
+* cat 1.txt | tr 'a-z' 'A-Z' 	将1.txt内容中的小写转换为大写
+* cat 1.txt | tr -s 'a-z'         将1.txt内容中的连续字母去重
+
+### head
+
+* head -10 file1.txt 打印文件file1.txt的前10行
+* head -c 10 file1.txt 打印文件file1.txt的前10个字节
+* head -c -10 file1.txt 打印文件file1.txt除去最后10个字节的内容
